@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+#chk1, #chk2, #chk3,#chk4,#chk5,#chk6,#chk7{
+    width:0;
+    height: 0;
+    overflow: hidden;
+}/*checkbox*/
+label.type01{
+    background: url(../images/bg_checkbox1.png) no-repeat 0 0;
+    height:24px;
+    display: inline-block;
+    padding-left: 30px;
+    color:#666666;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+label.checked{
+    background-position: 0 -100px;
+}/*선택된 checkbox*/
+
+#wrap2 div{
+    line-height: 2em;
+    text-align: justify;
+}
+/*----------------------------------*/
+
+/*join container*/
+#join_container{
+    width:500px;
+    height:1000px;
+    margin:0px auto;
+}/*전체*/
+#join_container>h3{
+    font-size:19px;
+    text-align:center;
+    font-weight: bold;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+/*회원가입*/
+.point{
+    color:#cc0066;
+}
+.infor{
+    color:#009966;
+}
+
+#join fieldset{
+    border:1px solid #cccccc;
+    padding:10px;
+    margin-bottom:30px;
+}
+#join fieldset legend{
+    font-size:15px;
+    font-weight:bold;
+    padding:5px;
+}
+
+.box_i{
+    clear:both;
+    margin:5px 0;
+}
+
+.box_t{
+    clear:both;
+    margin:10px 0;
+}
+
+/*필수 입력 항목*/
+.join1 label{
+    width:100px;
+    height:30px;
+    display:inline-block;
+    line-height:30px;
+    text-align:right;
+    margin-right:10px;
+}
+.join1 input{
+    border:1px solid #cccccc;
+    text-align:center;
+    
+}/*공통*/
+#u_name, #u_id, #pwd1, #pwd2{
+    width:150px;
+}
+/*이름,아이디,비밀번호,비밀번호 확인*/
+#zip1, #zip2, .zip_btn{
+    width:90px;
+}/*우편번호*/
+.zip_btn{
+    background-color:#cccccc;
+    border-radius:5px;
+    cursor:pointer;
+    font-size: 12px;
+}/*우편번호 찾기*/
+.zip_btn:hover{
+    background-color:#333333;
+    color:#ffffff;
+}
+#add{
+    width:350px;
+}/*주소*/
+#tel1, #tel2, #tel3{
+    width:70px;
+}/*전화번호*/
+
+/*비밀번호 찾는 방법 선택*/
+.box_s{
+    width:110px;
+    height:30px;
+    display:block;
+    float:left;
+    text-align:right;
+    margin-right:10px;
+    line-height:30px;
+}
+.box_li{
+    clear:both;
+}
+.jon2 input, #phone1{
+    border:1px solid #cccccc;
+    height:20px;
+    text-align:center;
+}/*공통*/
+
+#sms, #mail{
+    vertical-align:-10px;
+    margin-right:3px;
+}/*수신방법 radio버튼*/
+
+#phone1_wrap{
+    width:70px;
+    height:30px;
+    float:left;
+}/*휴대전화번호*/
+#phone1{
+    width:70px;
+    height:30px;
+    border:none;
+}
+#phone2, #phone3{
+    width:70px;
+}/*휴대전화번호*/
+#u_email{
+    width:350px;
+}
+
+/*이용약관동의*/
+.join3 textarea{
+    width:480px;
+    height:20px;
+    border:none;
+    resize:none;
+}/*약관*/
+.join3 textarea::-webkit-scrollbar{
+    width:6px;
+}
+.join3 textarea::-webkit-scrollbar-track{
+    background-color:#999999;
+}
+.join3 textarea::-webkit-scrollbar-thumb{
+    background-color:#333333;
+}
+.join3 textarea::-webkit-scrollbar-thumb:hover{
+    background-color:#666666;
+}
+.join3 textarea::-webkit-scrollbar-thumb:active{
+    background-color:#000000;
+}
+
+#chk1, #chk2{
+    vertical-align:-2px;
+}/*동의,동의안함*/
+#chk2{
+    margin-left:8px;
+}/*동의안함*/
+
+/*회원가입하기, 다시작성*/
+.btn{
+    width:308px;
+    height:30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.btn input{
+    width:150px;
+    height:30px;
+    border:2px solid #cccccc;
+    float:left;
+    margin:0 2px;
+    cursor:pointer;
+    border-radius:5px;
+}
+.btn input:hover{
+    background-color:#333333;
+    color:#ffffff;
+}
+/*완료*/
+.button{
+    float: right;
+    margin:20px;
+    border-radius:5px;
+}
+.button:hover{
+    background-color:#333333;
+    color:#ffffff;
+}
+
+.u_id2{
+    background-color:#cccccc;
+    border-radius:5px;
+    cursor:pointer;
+    font-size: 12px;
+}/*우편번호 찾기*/
+.u_id2:hover{
+    background-color:#333333;
+    color:#ffffff;
+}
+
+.view{
+    padding:5px;
+    vertical-align: bottom;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오프렌즈샵</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/kakao.js"></script>
+    <script src="js/join.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/kakao.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+</head>
+<body>
+    <script src="js/header.js"></script>
+    <div id="join_container">
+        <h3>회원가입</h3>
+        <form action="join.asp" method="post" id="join">
+            <fieldset class="join1">
+                <legend>필수 입력 항목</legend>
+                <p class="box_i">
+                <label for="u_name"><strong class="point">* </strong>이름</label><input type="text" id="u_name" required></p>
+                <p class="box_i">
+                <label for="boy"><strong class="point">* </strong>성별</label><input type="radio" id="boy" name="gender" required>남자<input type="radio" id="girl" name="gender" required>여자</p>
+                <p class="box_i">
+                <label for="day"><strong class="point">* </strong>생년월일</label><input type="date" id="day">
+                <p class="box_t">
+                <strong class="point">주의!</strong> 아이디는 영문자와 숫자만을 사용하여 4글자이상 16글자 이하로 작성해 주세요.</p>
+                <p class="box_i">
+                <label for="u_id"><strong class="point">* </strong>아이디</label><input type="text" id="u_id" required><input type="button" value="중복확인" class="u_id2"></p>
+                <p class="box_t">
+                <strong class="point">주의!</strong> 비밀번호는 보안을 위해 영문자, 숫자 및 특수문자 등을 조합하여 작성하시기 바랍니다.</p>
+                <p class="box_t"><strong class="point">주의!</strong> 비밀번호는 보안을 위해 4글자 이상으로 작성해 주세요.</p>
+                <p class="box_i">
+                <label for="pwd1"><strong class="point">* </strong>비밀번호</label><input type="password" id="pwd1" required></p>
+                <p class="box_i">
+                <label for="pwd2"><strong class="point">* </strong>비밀번호 확인</label><input type="password" id="pwd2" required></p>
+                <p class="box_t">
+                <strong class="infor">안내!</strong> 우편번호를 모를 경우에는 빈칸으로 두고 주소만 제대로 입력하면 됩니다.</p>
+                <p class="box_i">
+                <label for="zip1"><strong class="point">* </strong>우편번호</label><input type="text" id="zip1" required>-<input type="text" id="zip2" required><input type="button" value="우편번호찾기" class="zip_btn"></p>
+                <p class="box_t">
+                <strong class="point">주의!</strong> 주소는 [시/도] [시/구/군] [읍/면/리] [번지] [건물/아파트명] 순서로 입력해 주세요.</p>
+                <p class="box_i">
+                <label for="add"><strong class="point">* </strong>주소</label><input type="text" id="add" required></p>
+                <p class="box_i">
+                <label for="tel1"><strong class="point">* </strong>전화번호</label><input type="tel" id="tel1" title="지역번호입력" required>-<input type="tel" id="tel2" title="전화번호 앞자리" required>-<input type="tel" id="tel3" title="전화번호 뒷자리" required></p>
+            </fieldset>
+            </form>
+            <div id="wrap2">
+                <p>이용약관 동의</p>
+                <form class="post">
+                    <div>
+                    <p class="chk_all">
+                        <input type="checkbox" id="chk1"><label for="chk1" class="type01 type02">모두 동의합니다.</label><br> 전체 동의는 필수 및 선택정보에 대한 동의도 포함되어 있으며, 개별적으로도 동의를 선택하실 수 있습니다.
+                        선택항목에 대한 동의를 거부하시는 경우에도 서비스는 이용이 가능합니다.
+                    </p>
+                    <p><input type="checkbox" name="chk" id="chk2"><label for="chk2" class="type01 type03">[필수]만 14세 이상입니다.</label></p>
+                    <p><input type="checkbox" name="chk" id="chk3"><label for="chk3" class="type01 type04">[필수] 개인정보 수집 및 이용 동의</label><a href="chk2.html" class="popup"><img src="./images/i1/4.gif" alt="오른쪽" width="50" height="16" class="view"></a></p>
+                    <p><input type="checkbox" name="chk" id="chk4"><label for="chk4" class="type01 type05">[필수] 카카오프렌즈샵 약관</label><a href="chk3.html" class="popup"><img src="./images/i1/4.gif" alt="오른쪽" width="50" height="16" class="view"></a></p>
+                    <p><input type="checkbox" name="chk" id="chk5"><label for="chk5" class="type01 type06">[필수] 카카오프렌즈샵 통합서비스 약관</label><a href="chk4.html" class="popup"><img src="./images/i1/4.gif" alt="오른쪽" width="50" height="16" class="view"></a></p>
+                    <p><input type="checkbox" name="chk" id="chk6"><label for="chk6" class="type01 type07">[선택] 카카오프렌즈샵 채널 추가 및 광고메시지 수신</label><a href="chk5.html" class="popup"><img src="./images/i1/4.gif" alt="오른쪽" width="50" height="16" class="view"></a></p>
+                    <p><input type="checkbox" name="chk" id="chk7"><label for="chk7" class="type01 type08">[선택] 위치정보 수집 및 이용 동의</label><a href="chk6.html" class="popup"><img src="./images/i1/4.gif" alt="오른쪽" width="50" height="16" class="view"></a></p>
+                </div>
+                </form>
+                <button class="button">완료</button>
+            </div>
+        </div>
+    <script src="js/bottom.js"></script> 
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오프렌즈샵</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //1.  팝업창 띄우기
+            //window.open(파일명,창이름,옵션)
+            //-width / height
+            //2.  팝업창 닫기
+            //window.close()
+
+            $(".close_popup").click(function(){
+                window.close();
+            });
+        });
+    </script>
+    <style>
+        dl,dt,dd{
+            margin:0;
+            padding:0;
+        }
+        .contents dd{
+            text-align: justify;
+        }
+        .close_popup{
+            color:#333333;
+            text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+<dl class="contents">
+    <dt>카카오알림 채널 추가 및 광고메시지 수신</dt>
+    <dd>카카오알림 채널 추가 및 광고메시지 수신
+        카카오알림 카테고리의 모든 카카오톡 채널을 추가하고 (주)카카오가 제공하는 광고/마케팅 정보를 메시지로 받습니다.
+        카카오알림은 (주)카카오가 직접 운영하는 통합서비스들의 소식과 혜택, 쿠폰 등 유용한 정보를 제공하는 카카오톡 채널을 통칭합니다.
+        
+        현재 운영 중인 카카오알림 카테고리의 카카오톡 채널은 아래와 같습니다.
+        
+        카카오
+        오늘의 채널
+        카카오 온더무브
+        Kakao Talk_US
+        카카오알림 카테고리의 카카오톡 채널 중 ‘카카오', ‘오늘의 채널' , '카카오 온더무브' 채널은 대한민국 휴대전화번호를 등록하여 인증한 사용자에게 추가되며, ‘Kakao Talk_US’ 채널은 미국 지역의 휴대전화번호를 등록하여 인증한 사용자에게 추가됩니다. 한번 추가된 채널은 그 후 타 국가 휴대전화번호로 변경하여도 자동으로 삭제되지 않고 유지됩니다.
+        
+        카카오알림 카테고리 중 특정 채널의 메시지를 받고 싶지 않은 경우, 언제든지 [해당 채널 > 홈]에서 차단할 수 있습니다.
+        
+        추후 카카오알림 카테고리에 새로운 채널이 추가될 경우, 본 동의를 한 사용자의 카카오톡에 자동으로 해당 채널이 추가되며 해당 채널로부터 메시지를 수신할 수 있게 됩니다.
+        
+        만약 사용자가 앞으로 카카오알림 카테고리의 채널을 더 이상 추가하고 싶지 않을 경우, [카카오톡 > 설정 > 내 개인정보 관리] 혹은 [카카오계정 관리 > 서비스 이용 동의]에서 본 동의를 철회할 수 있습니다.
+        
+        본 동의 시점에 카카오톡을 아직 사용하지 않은 사용자는 추후 카카오톡 가입이 완료될 경우 자동으로 카카오알림 카테고리의 채널이 추가됩니다.
+</dd>
+<p><a href="#" class="close_popup">[닫기]</a></p>
+</dl>  
+</body>
+</html>

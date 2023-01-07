@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>카카오프렌즈샵</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/kakao.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/kakao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+</head>
+<body>
+    <div id="kk">
+        <div id="top_wrap">
+            <header id="top">
+                    <div id="logo">
+                        <h1><a href="https://www.kakaocorp.com/page/"><img src="images/62.png" alt="카카오프렌즈샵" width="295" height="40"></a></h1> 
+                        <ul id="ul">
+                            <li class="search"><img src="images/i1/3.gif" alt="검색" width="14" height="14">
+                                <div>
+                                <p>
+                                <label for="search" id="search_t">통합검색</label><input type="text" id="search" autocomplete="off" maxlength="20">
+                                </p>
+                                </div>
+                            </li>
+                            <li><a href="login.html" class="login">로그인</a></li>
+                            <li><a href="join.html">회원가입</a></li>
+                            <li><a href="#">장바구니</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <div id="top_menu">
+                        <!--js태그 추가-->
+                        <nav id="main_menu">
+                        <ul>
+                                <li><a href="index.html">홈</a>
+                                </li><!--홈 --> 
+                                <li><a href="#none">회사소개 </a>
+                                    <ul class="sub">
+                                        <li><a href="#none">카카오프렌즈</a></li>
+                                                    <li><a href="#none">협력업체</a></li>
+                                                    <li><a href="#none">캐릭터소개</a></li>
+                                                    <li><a href="#none">오프라인샵</a></li>
+                                    </ul>
+                                </li> <!-- 회사소개--> 
+                                <li><a href="#none">상품</a>
+                                    <ul class="sub">
+                                        <li><a href="#none">캐릭별상품</a></li>
+                                                    <li><a href="#none">신상품</a></li>
+                                                    <li><a href="#none">베스트상품</a></li>
+                                                    <li><a href="#none">용도별상품</a></li>
+                                    </ul>
+                                </li> <!--상품 -->  
+                                <li><a href="#none">고객센터</a>
+                                    <ul class="sub">         
+                                        <li><a href="#none">상품문의</a></li>
+                                        <li><a href="#none">입금결제</a></li>
+                                        <li><a href="#none">변경및취소</a></li>
+                                        <li><a href="#none">배송문의</a></li>
+                                        <li><a href="#none">교환반품</a></li>
+                                    </ul>			
+                                </li><!-- 고객센터-->    
+                                <li><a href="#none">공지사항</a>
+                                    <ul class="sub"> 
+                                        <li><a href="#none">공지사항</a></li>
+                                        <li><a href="#none">이벤트</a></li>
+                                        <li><a href="#none">뉴스</a></li>
+                                    </ul>		
+                                </li> <!-- 공지사항-->   
+                            </ul>
+                        </nav><!--main_menu-->
+                    </div><!--top_menu-->
+            </header><!--header top-->
+        </div>
+        <div id="main_1" >
+            <a href="#none">
+                <div id="main_2">
+                    <p class="banner_header">KAKAO FRIENDS<br><span><b>신규회원 이벤트</b></span></p>
+                    <p>지금 회원가입시 무료배송 쿠폰 증정!<br>
+                        주문하고  싶은데 배송비 때문에 망설이셨다면 지금이 기회!</p><p>(교환&반품시 무료배송 혜택이 소멸되며 배송비는 개인부담입니다.)</p><p>* 상황에 따라 조기 소진 마감될 수 있습니다.</p>
+                    </div>
+                </div><!--main_2-->
+            </a>
+        </div><!--main_1-->
+        <div id="main_3">
+            <p>내가 가장 좋아하는 캐릭터는?</p>
+            <ul class="character">
+                <li><img src="images/k1/22_07.gif" alt="프로도" id="icon_frodo"><p>프로도</p></li>
+                <li><img src="images/k1/22_02.gif" alt="라이언" id="icon_ryan"><p>라이언</p></li>
+                <li><img src="images/k1/22_06.gif" alt="춘식이" id="icon_choon"><p>춘식이</p></li>
+                <li><img src="images/k1/22_04.gif" alt="무지" id="icon_muzi"><p>무지</p></li>
+                <li><img src="images/k1/22_05.gif" alt="콘" id="icon_con"><p>콘</p></li>
+                <li><img src="images/k1/22_03.gif" alt="어피치" id="icon_apeach"><p>어피치</p></li>
+                <li><img src="images/k1/22_01.gif" alt="튜브" id="icon_tube"><p>튜브</p></li>
+                <li><img src="images/k1/22_08.gif" alt="제이지" id="icon_jayg"><p>제이지</p></li>
+                <li><img src="images/k1/22_09.gif" alt="네오" id="icon_neo"><p>네오</p></li>
+            </ul>
+        </div><!--main_3-->
+        <div class="main_4">
+            <div class="slide1">
+                <div id="slide1_frodo">
+                    <h3>프로도</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                                <img src="images/프로도/1.jpg" alt="윈터원더랜드 미니키체인_프로도" width="300" height="300">
+                                <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>윈터원더랜드 미니키체인_프로도</p><p>12,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/프로도/2.jpg" alt="베이비드리밍 TPU케이스 리틀프렌즈" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>베이비드리밍 TPU케이스 리틀프렌즈</p><p>16,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/프로도/3.jpg" alt="베이비드리밍 러블리애착인형 프로도" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>베이비드리밍 러블리애착인형 프로도</p><p>32,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/프로도/4.jpg" alt="러블리 엔젤 베이비필로우_프로도" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>러블리 엔젤 베이비필로우_프로도</p><p>13,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/프로도/5.jpg" alt="프로도 무비스타 미니인형" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>프로도 무비스타 미니인형</p><p>12,000원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div>
+                <div id="slide1_ryan">
+                    <h3>라이언</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                                <img src="images/라이언/1.jpg" alt="브릭피규어 자유의여신상_라이언" width="300" height="300">
+                                <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>브릭피규어 자유의여신상_라이언</p><p>29,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/라이언/2.jpg" alt="모션감지 센서등(건전지타입)_라이언" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>모션감지 센서등(건전지타입)_라이언</p><p>32,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/라이언/3.jpg" alt="스탠드형칫솔살균기_머그리틀라이언" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>스탠드형칫솔살균기_머그리틀라이언</p><p>29,900원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/라이언/4.jpg" alt="무선충전마우스패드 오거나이저_라이언" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>무선충전마우스패드 오거나이저_라이언</p><p>42,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/라이언/5.jpg" alt="KF 캠핑 의자 라이언" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>KF 캠핑 의자 라이언</p><p>42,000원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div><!--slide1_ryan-->
+                <div id="slide1_choon">
+                    <h3>춘식이</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                                <img src="images/춘식이/1.jpg" alt="EveryYay 납작 필로우_트민냥춘식이" width="300" height="300">
+                                <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>EveryYay 납작 필로우_트민냥춘식이</p><p>22,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/춘식이/2.jpg" alt="EveryYay 체커보드 러그_춘식이" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>EveryYay 체커보드 러그_춘식이</p><p>45,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/춘식이/3.jpg" alt="EveryYay 체커보드 슬리퍼_라이언&춘식이" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>EveryYay 체커보드 슬리퍼_라이언&춘식이</p><p>25,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/춘식이/4.jpg" alt="세라믹 소품거치대_춘식이" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>세라믹 소품거치대_춘식이</p><p>39,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/춘식이/5.jpg" alt="춘식이 페이스 파우치" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>춘식이 페이스 파우치</p><p>15,000원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div><!--slide1_choon-->
+                <div id="slide1_muzi">
+                    <h3>무지</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                                <img src="images/무지/1.jpg" alt="차량용 스티커_아기가타고있어요" width="300" height="300">
+                                <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>차량용 스티커_아기가타고있어요</p><p>4,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/무지/2.jpg" alt="꿀잠 폭신바디필로우_무지" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>꿀잠 폭신바디필로우_무지</p><p>35,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/무지/3.jpg" alt="가벼운 3단우산_라이언&무지" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>가벼운 3단우산_라이언&무지</p><p>17,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/무지/4.jpg" alt="카카오프렌즈 해피모먼트 마일드 형광펜 3색 세트" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>카카오프렌즈 해피모먼트 마일드 형광펜 3색 세트</p><p>3,500원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/무지/5.jpg" alt="카카오프렌즈 15cm 피규어 무지&콘" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>카카오프렌즈 15cm 피규어 무지&콘</p><p>21,000원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div><!--slide1_muzi-->
+                <div id="slide1_con">
+                    <h3>콘</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                            <img src="images/콘/1.jpg" alt="런던에디션 폰케이스" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>런던에디션 폰케이스</p><p>20,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/콘/2.jpg" alt="차량용 스티커_아기가타고있어요" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>차량용 스티커_아기가타고있어요</p><p>4,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/콘/3.jpg" alt="멀티페어링레트로키보드_카카오프렌즈" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>멀티페어링레트로키보드_카카오프렌즈</p><p>49,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/콘/4.jpg" alt="변온 캔글라스 2P 세트_리틀아이언&어피치" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>카카오프렌즈 피큐어 키링 콘 실리콘 에어팟 이어폰 케이스
+                            </p><p>19,900원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/콘/5.jpg" alt="가벼운 3단우산_어피치&튜브" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>카카오 그립톡 슬림 핸드폰 거치대 콘</p><p>12,900원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div><!--slide1_con-->
+                <div id="slide1_apeach">
+                    <h3>어피치</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                                <img src="images/어피치/1.jpg" alt="UV차단마스크 스트랩 SET_어피치" width="300" height="300">
+                                <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>UV차단마스크 스트랩 SET_어피치</p><p>9,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/어피치/2.jpg" alt="케어케어x카카오프렌즈 폰케이스" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>케어케어x카카오프렌즈 폰케이스</p><p>14,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/어피치/3.jpg" alt="케어케어x카카오프렌즈 원피스" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>케어케어x카카오프렌즈 원피스</p><p>39,900원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/어피치/4.jpg" alt="변온 캔글라스 2P 세트_리틀아이언&어피치" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>변온 캔글라스 2P 세트_리틀아이언&어피치</p><p>20,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/어피치/5.jpg" alt="가벼운 3단우산_어피치&튜브" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>가벼운 3단우산_어피치&튜브</p><p>17,000원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div><!--slide1_apeach-->
+                <div id="slide1_tube">
+                    <h3>튜브</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                                <img src="images/튜브/1.jpg" alt="글리터그라데이션케이스_튜브" width="300" height="300">
+                                <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>글리터그라데이션케이스_튜브</p><p>15,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/튜브/2.jpg" alt="러블리 엔젤 베이비필로우_튜브" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>러블리 엔젤 베이비필로우_튜브</p><p>13,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/튜브/3.jpg" alt="가벼운 3단우산_어피치&튜브" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>가벼운 3단우산_어피치&튜브</p><p>17,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/튜브/4.jpg" alt="얌얌 미니 에코백 튜브" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>얌얌 미니 에코백 튜브</p><p>15,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/튜브/5.jpg" alt="차량용방향제(통풍구형)사다리 2_튜브" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>차량용방향제(통풍구형)사다리 2_튜브</p><p>13,900원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div><!--slide1_tube-->
+                <div id="slide1_jayg">
+                    <h3>제이지</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                                <img src="images/제이지/1.jpg" alt="러블리 엔젤 베이비필로우_제이지" width="300" height="300">
+                                <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>러블리 엔젤 베이비필로우_제이지</p><p>13,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/제이지/2.jpg" alt="얌얌 에코백 제이지" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>얌얌 에코백 제이지</p><p>22,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/제이지/3.jpg" alt="얌얌 미니 에코백 제이지" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>얌얌 미니 에코백 제이지</p><p>15,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/제이지/4.jpg" alt="25cm인형리틀프렌즈-제이지" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>25cm인형리틀프렌즈-제이지</p><p>24,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/제이지/5.jpg" alt="[시그니처]클래식인형_제이지" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>[시그니처]클래식인형_제이지</p><p>35,000원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div><!--slide1_jayg-->
+                <div id="slide1_neo">
+                    <h3>네오</h3>    
+                    <p><a href="#none" class="view">+ 더보기</a></p>
+                    <ul class="img_slide">
+                        <li>
+                            <div class="ex2">
+                                <img src="images/네오/1.jpg" alt="살롱드 미니인형-네오" width="300" height="300">
+                                <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>  
+                            <p>살롱드 미니인형-네오</p><p>12,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/네오/2.jpg" alt="윈터원더랜드 미니키체인_네오" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>윈터원더랜드 미니키체인_네오</p><p>12,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/네오/3.jpg" alt="베이비드리밍 TPU케이스 리틀프렌즈" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>베이비드리밍 TPU케이스 리틀프렌즈</p><p>16,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/네오/4.jpg" alt="러블리 엔젤 베이비필로우_네오" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>러블리 엔젤 베이비필로우_네오</p><p>13,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ex2">
+                            <img src="images/네오/5.jpg" alt="네오 무비스타 미니인형" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                            <p>네오 무비스타 미니인형</p><p>12,000원</p>
+                            </div>
+                        </li>
+                    </ul><!--img_slide-->
+                </div> <!--slide1_neo-->
+            </div><!--slide1-->
+            <div class="slide2">
+                <h3>신상품</h3>
+                <p><a href="#none" class="view">+ 더보기</a></p>
+                <ul class="new_slide">
+                    <li>
+                        <div class="ex2">
+                            <img src="images/n1/1.jpg" alt="라이언 피규어 가습기" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>라이언 피규어 가습기</p><p>48,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ex2">
+                            <img src="images/n1/2.jpg" alt="어피치 피규어 가습기" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>어피치 피규어 가습기</p><p>48,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ex2">
+                            <img src="images/n1/3.jpg" alt="춘식이 피규어 가습기" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>춘식이 피규어 가습기</p><p>48,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ex2">
+                            <img src="images/n1/4.jpg" alt="TV 가습기 죠르디" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>TV 가습기 죠르디</p><p>32,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ex2">
+                            <img src="images/n1/5.jpg" alt="꽃길만 걷길, 춘식이가 응원해요 쿠션" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>꽃길만 걷길, 춘식이가 응원해요 쿠션</p><p>29,000원</p>
+                        </div>
+                    </li>
+                </ul><!--new_slide-->
+                <p class="btn2">
+                    <img src="images/i1/roll_left.gif" alt="왼쪽" width="27" height="61" class="btn2_1">
+                    <img src="images/i1/roll_right.gif" alt="오른쪽" width="27" height="61" class="btn2_2">
+                </p>
+            </div><!--slide2-->
+            <div class="slide3">
+                <h3>베스트상품</h3>
+                <p><a href="#none" class="view">+ 더보기</a></p>
+                <ul class="best_slide">
+                    <li>
+                        <div class="ex2">
+                            <img src="images/b1/1.jpg" alt="[온라인]2023 다이어리세트_라이언" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>[온라인]2023 다이어리세트_라이언</p><p>27,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ex2">
+                            <img src="images/b1/2.jpg" alt="입는 망토담요_춘식이" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>입는 망토담요_춘식이</p><p>39,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ex2">
+                            <img src="images/b1/3.jpg" alt="2023 탁상용 캘린더" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>2023 탁상용 캘린더</p><p>6,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ex2">
+                            <img src="images/b1/4.jpg" alt="라이언&춘식이 나눠쓰는 손난로 보배" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>라이언&춘식이 나눠쓰는 손난로 보배</p><p>49,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ex2">
+                            <img src="images/b1/5.jpg" alt="[온라인 전용] 꿀잠친구_고슴도치 리틀라이언" width="300" height="300">
+                            <p class="heart1"><img src="images/i1/1.png" alt="하트" width="40" height="40"></p><p class="basket1"><img src="images/i1/2.png" alt="장바구니" width="40" height="40"></p>
+                        <p>[온라인 전용] 꿀잠친구_고슴도치 리틀라이언</p><p>42,000원</p>
+                        </div>
+                    </li>
+                </ul><!--best_slide-->
+                <p class="btn3">
+                    <img src="images/i1/roll_left.gif" alt="왼쪽" width="27" height="61" class="btn3_1">
+                    <img src="images/i1/roll_right.gif" alt="오른쪽" width="27" height="61" class="btn3_2">
+                </p>
+            </div><!--slide3-->
+        </div><!--main_4-->
+            <div class="video2">
+                <p class="btn4">
+                    <img src="images/i1/roll_left.gif" alt="왼쪽" width="27" height="61" class="btn4_1">
+                    <img src="images/i1/roll_right.gif" alt="오른쪽" width="27" height="61" class="btn4_2">
+                </p>
+            <div class="v-text">
+                <p> youtube </p>
+                <a href="https://www.youtube.com/channel/UCFnuC4E0kzpJF6vv1OJ7B3Q">더 많은 영상 보기</a>
+            </div><!--v-text-->
+            <ul class="video">
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/Cm_qva8i8Q4" title="YouTube video player"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/kqHmNQfx8nY" title="YouTube video player"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/YHgDMXoSO1E" title="YouTube video player"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/x6P9jy7ohrA" title="YouTube video player"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/u7zgrsmaLEk" title="YouTube video player"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                </ul>
+            </div><!--video2-->
+        <footer id="bottom">
+            <ul>
+                <li><a href="#none">제휴문의</a></li>
+                <li><a href="#none">고객문의 </a></li>
+                <li><a href="#none">이용약관</a></li>
+                <li><a href="#none">개인정보처리방침</a></li>
+                <li><a href="#none">지식재산권보호센터</a></li>
+                <li><a href="#none">부정비리신고</a></li>
+                <li><a href="#none">찾아오시는길</a></li>
+                <li><a href="#none">이메일주소 수집거부</a></li>
+                <li><a href="#none">원격연결</a></li>
+            </ul>
+            <div id="end">
+                    <address>
+                    카카오프렌즈샵 대표이사: 홍은택 / 제주특별자치도 제주시 첨단로 242 / 사업자등록번호 : 120-81-47521<br>
+                    고객센터 1577-6263 (통화료발생) / 상담시간 : 평일 09:00~18:00 / e-mail : friends.cs@kakaocorp.com<br>
+                    <img src="images/1.png" alt="가족친화 우수기업" width="100" height="25" class="logo1">
+                    <img src="images/2.png" alt="kakao" width="60" height="16" class="logo2">
+                    </address>
+                    
+            </div>
+        </footer><!--footer bottom-->
+    </div>
+</body>
+</html>
